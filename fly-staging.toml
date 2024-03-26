@@ -8,7 +8,7 @@ primary_region = 'lhr'
   BP_NATIVE_IMAGE = "true"
   BP_JVM_VERSION = "21"
   BP_JAVA_INSTALL_NODE = "true"
-  BP_MAVEN_ACTIVE_PROFILES = "native,production"
+  BP_MAVEN_ACTIVE_PROFILES = "native"
   BP_OCI_SOURCE = "https://github.com/shymega/shsponsors.shymega.org.uk"
   BP_SPRING_CLOUD_BINDINGS_DISABLED = "true"
 
