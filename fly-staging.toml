@@ -1,0 +1,25 @@
+app = 'shsponsors-shymega-server-staging'
+primary_region = 'lhr'
+
+[build]
+  builder = "paketobuildpacks/builder-jammy-tiny"
+
+[build.args]
+  BP_NATIVE_IMAGE = "true"
+  BP_JVM_VERSION = "21"
+  BP_MAVEN_ACTIVE_PROFILES = "native,production"
+  BP_OCI_SOURCE = "https://github.com/shymega/shsponsors.shymega.org.uk"
+  BP_SPRING_CLOUD_BINDINGS_DISABLED = "true"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ['app']
+
+[[vm]]
+  memory = '1gb'
+  cpu_kind = 'shared'
+  cpus = 1
