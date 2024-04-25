@@ -10,6 +10,7 @@ primary_region = 'lhr'
   BP_MAVEN_ACTIVE_PROFILES = "native,production"
   BP_OCI_SOURCE = "https://github.com/shymega/shsponsors.shymega.org.uk"
   BP_SPRING_CLOUD_BINDINGS_DISABLED = "true"
+  CNB_TARGET_OS = "linux"
 
 [http_service]
   internal_port = 8080
