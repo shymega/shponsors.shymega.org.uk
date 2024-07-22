@@ -4,12 +4,12 @@
       version = "1.0.7";
 system = "x86_64-linux";
 devenv_root = "/home/dominic.rodriguez/projects/git.shymega.org.uk/shymega/shponsors.shymega.org.uk";
-devenv_dotfile = ./.devenv.ld3bFyzHk5cJ;
-devenv_dotfile_string = ".devenv.ld3bFyzHk5cJ";
+devenv_dotfile = ./.devenv;
+devenv_dotfile_string = ".devenv";
 container_name = null;
 devenv_tmpdir = "/run/user/1000";
 devenv_runtime = "/run/user/1000/devenv-ea837ff";
-devenv_istesting = true;
+devenv_istesting = false;
 
         in {
         pre-commit-hooks.url = "github:cachix/pre-commit-hooks.nix";
@@ -25,12 +25,12 @@ devenv_istesting = true;
           version = "1.0.7";
 system = "x86_64-linux";
 devenv_root = "/home/dominic.rodriguez/projects/git.shymega.org.uk/shymega/shponsors.shymega.org.uk";
-devenv_dotfile = ./.devenv.ld3bFyzHk5cJ;
-devenv_dotfile_string = ".devenv.ld3bFyzHk5cJ";
+devenv_dotfile = ./.devenv;
+devenv_dotfile_string = ".devenv";
 container_name = null;
 devenv_tmpdir = "/run/user/1000";
 devenv_runtime = "/run/user/1000/devenv-ea837ff";
-devenv_istesting = true;
+devenv_istesting = false;
 
             devenv =
             if builtins.pathExists (devenv_dotfile + "/devenv.json")
